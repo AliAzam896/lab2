@@ -1,0 +1,9 @@
+kind: Kustomization
+resources:
+- ../../base
+namePrefix: dev-
+configMapGenerator:
+- name: user-service-config
+  behavior: merge
+  literals:
+  - LOG_LEVEL=DEBUG
