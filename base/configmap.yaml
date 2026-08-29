@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: user-service-config
 data:
-  DB_HOST: "database-service"
+  DB_HOST: "prod-database-service"
   DB_PORT: "5432"
   DB_USER: "exoplanets"
   DB_PASSWORD: "apppassword"
