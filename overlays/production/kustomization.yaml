@@ -1,0 +1,19 @@
+kind: Kustomization
+
+resources:
+- ../../base
+
+namePrefix: prod-
+
+commonLabels:
+  app.kubernetes.io/environment: production
+
+configMapGenerator:
+- name: user-service-config
+  behavior: merge
+  literals:
+  - LOG_LEVEL=WARN
+
+patches:
+- path: resource-limits.yaml
+
