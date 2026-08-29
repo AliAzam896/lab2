@@ -9,8 +9,3 @@ images:
 replicas:
 - name: user-service
   count: 1
-configMapGenerator:
-- name: user-service-config
-  behavior: merge
-  literals:
-  - LOG_LEVEL=DEBUG
