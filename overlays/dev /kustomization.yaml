@@ -6,6 +6,4 @@ namePrefix: dev-
 images:
 - name: quay.io/redhattraining/exoplanets
   newTag: v1.0
-replicas:
-- name: user-service
-  count: 1
+
