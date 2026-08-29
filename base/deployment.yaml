@@ -21,4 +21,4 @@ spec:
         - containerPort: 8080
         envFrom:
         - configMapRef:
-            name: prod-user-service-config
+            name: user-service-config
