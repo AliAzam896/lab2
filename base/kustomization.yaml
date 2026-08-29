@@ -4,14 +4,4 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - database-service.yaml
-
-configMapGenerator:
-- name: user-service-config
-  literals:
-  - DB_HOST=prod-database-service
-  - DB_PORT=5432
-  - DB_USER=exoplanets
-  - DB_PASSWORD=apppassword
-  - DB_NAME=exoplanets
-  - DB_SSLMODE=disable
-  - LOG_LEVEL=INFO
+- configmap.yaml 
