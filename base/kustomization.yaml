@@ -8,7 +8,7 @@ resources:
 configMapGenerator:
 - name: user-service-config
   literals:
-  - DB_HOST=wrong-database-service
+  - DB_HOST=prod-database-service
   - DB_PORT=5432
   - DB_USER=exoplanets
   - DB_PASSWORD=apppassword
