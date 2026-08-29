@@ -1,0 +1,11 @@
+kind: Kustomization
+resources:
+- ../../base
+namePrefix: staging-
+commonLabels:
+  app.kubernetes.io/environment: staging
+configMapGenerator:
+- name: user-service-config
+  behavior: merge
+  literals:
+  - LOG_LEVEL=INFO
